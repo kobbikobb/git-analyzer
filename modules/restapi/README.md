@@ -3,6 +3,10 @@
 # Run it
 ./gradlew bootRun
 
+# Docker
+docker build -f Dockerfile -t restapi .
+docker run -p 8080:8080 restapi
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
