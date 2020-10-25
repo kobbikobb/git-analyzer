@@ -2,12 +2,16 @@ version: "3.5"
 services:
   api:
      build: ./modules/restapi
+     image: kobbikobb/analyzer-restapi
+     container_name: analyzer-restapi
      networks:
       - app-network
      ports:
       - "8080:8080"
   client:
      build: ./modules/frontend
+     image: kobbikobb/analyzer-frontend
+     container_name: analyzer-frontend
      restart: unless-stopped
      ports:
       - "80:80"
