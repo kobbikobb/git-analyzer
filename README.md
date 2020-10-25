@@ -3,5 +3,5 @@
 - docker-compose build
 - docker-compose up
 
-# Tear Down
+# Teardown
 - docker-compose rm
